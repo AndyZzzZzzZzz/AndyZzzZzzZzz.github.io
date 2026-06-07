@@ -1,0 +1,11 @@
+# Hugo build output
+/public/
+/resources/_gen/
+/.hugo_build.lock
+
+# Local development
+.DS_Store
+
+# Tool caches
+node_modules/
+.cache/
