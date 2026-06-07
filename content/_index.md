@@ -1,5 +1,5 @@
 +++
-title = "About"
+title = "Home"
 description = "About Kunpeng Zhang"
 +++
 

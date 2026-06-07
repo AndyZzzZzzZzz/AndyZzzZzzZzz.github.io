@@ -1,6 +1,7 @@
 colorScheme = "engineering"
 defaultAppearance = "light"
 autoSwitchAppearance = true
+disableImageZoom = true
 
 enableA11y = false
 enableSearch = true

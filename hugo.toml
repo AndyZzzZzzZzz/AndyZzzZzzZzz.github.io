@@ -7,15 +7,10 @@ defaultContentLanguage = 'en'
 enableRobotsTXT = true
 summaryLength = 0
 enableEmoji = true
+disableKinds = ['taxonomy', 'term']
 
 [pagination]
   pagerSize = 100
-
-[taxonomies]
-  tag = 'tags'
-  category = 'categories'
-  author = 'authors'
-  series = 'series'
 
 [outputs]
   home = ['HTML', 'RSS', 'JSON']

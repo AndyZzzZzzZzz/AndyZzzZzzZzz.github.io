@@ -3,4 +3,4 @@ title = "Blog"
 description = "Notes and posts."
 +++
 
-Short notes, technical writeups, and longer-form thoughts can live here. Keeping the blog lightweight will help the site stay closer to an academic CV than a content-heavy publication feed.
+A summary of random thoughts I have. These posts include my perspectives on industry trends, deep dives into specific problems, tools, or algorithms I find interesting, and reflections on my personal learning journey.

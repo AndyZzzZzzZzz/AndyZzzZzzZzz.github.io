@@ -3,11 +3,4 @@ title = "Projects"
 description = "Selected engineering projects, tools, and experiments."
 +++
 
-This section can hold selected technical work: systems, tools, experiments, research prototypes, and small builds.
-
-For each project, consider keeping the format consistent:
-
-- What problem it solves
-- What you built
-- Technical choices and tradeoffs
-- Links to code, demos, papers, or notes
+A summary of random thoughts I have. These posts include my perspectives on industry trends, deep dives into specific problems, tools, or algorithms I find interesting, and reflections on my personal learning journey.
