@@ -1,0 +1,47 @@
+colorScheme = "engineering"
+defaultAppearance = "light"
+autoSwitchAppearance = true
+
+enableA11y = false
+enableSearch = true
+enableCodeCopy = true
+
+mainSections = ["blogs"]
+
+[header]
+  layout = "basic"
+
+[footer]
+  showMenu = true
+  showCopyright = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+[homepage]
+  layout = "sidebar"
+  showRecent = false
+
+[article]
+  showDate = true
+  showAuthor = false
+  showHero = false
+  showBreadcrumbs = false
+  showHeadingAnchors = true
+  showPagination = true
+  showReadingTime = true
+  showTableOfContents = true
+  showTaxonomies = true
+  showWordCount = false
+
+[list]
+  showSummary = true
+  groupByYear = false
+  cardView = false
+  constrainItemsWidth = true
+
+[taxonomy]
+  showTermCount = true
+
+[term]
+  groupByYear = false

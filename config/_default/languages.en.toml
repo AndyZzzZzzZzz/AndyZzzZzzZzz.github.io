@@ -1,0 +1,22 @@
+disabled = false
+locale = "en"
+label = "English"
+weight = 1
+title = "Kunpeng Zhang"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "Jan 2, 2006"
+  description = "Personal website of Kunpeng Zhang."
+
+[params.author]
+  name = "Kunpeng Zhang"
+  bio = "A minimal personal site for experience, projects, writing, and notes."
+  links = [
+    { github = "https://github.com/AndyZzzZzzZzz" },
+    { linkedin = "https://www.linkedin.com/in/andy-zhang-sfu/" },
+      { discord = "https://discord.com/users/zkpandy" },
+    { email = "mailto:zkpAndy@outlook.com" },
+  ]

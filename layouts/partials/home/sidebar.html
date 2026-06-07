@@ -1,0 +1,26 @@
+<div class="home-shell">
+  <article class="home-main max-w-full prose dark:prose-invert">
+    <div class="home-about-layout">
+      <div>
+        <header>
+          <h1 class="home-title">{{ .Site.Params.Author.name | default .Site.Title }}</h1>
+          {{ with .Site.Params.Author.headline }}
+            <p class="home-lede">{{ . | markdownify }}</p>
+            
+          {{ end }}
+        </header>
+        <section>{{ .Content }}</section>
+      </div>
+
+      
+
+      <div class="home-photo-stack">
+        <img class="home-portrait" src="{{ "image/photo.jpg" | relURL }}" alt="Portrait of Kunpeng Zhang">
+      
+        <div class="home-links">
+          {{ partialCached "author-links.html" . }}
+        </div>
+      </div>
+    </div>
+  </article>
+</div>

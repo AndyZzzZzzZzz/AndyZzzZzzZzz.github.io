@@ -1,3 +1,21 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://andyzzzzzzzzz.github.io/'
+locale = 'en-US'
+title = 'Kunpeng Zhang'
+theme = 'blowfish'
+
+defaultContentLanguage = 'en'
+enableRobotsTXT = true
+summaryLength = 0
+enableEmoji = true
+
+[pagination]
+  pagerSize = 100
+
+[taxonomies]
+  tag = 'tags'
+  category = 'categories'
+  author = 'authors'
+  series = 'series'
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
