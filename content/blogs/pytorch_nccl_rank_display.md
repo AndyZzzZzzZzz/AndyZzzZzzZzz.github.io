@@ -1,12 +1,14 @@
 +++
-title = "Fixing a Stale Rank Bug in PyTorch's NCCL BackendT"
+title = "Fixing a Stale Rank Bug in PyTorch's NCCL Backend"
 date = '2026-08-15T16:23:12+08:00'
-draft = true
+description = "An investigation into stale local ranks in PyTorch WorkNCCL error logs."
+summary = "How a function-local static string caused WorkNCCL to report stale local ranks across process groups."
+draft = false
 +++
 
 Debugging distributed training in PyTorch can be challenging. When a collective operation times out or fails, your first instinct is to check the logs to see which rank caused the bottleneck. But what happens when the logs lie to you?
 
-Recently, I encountered and patched an interesting bug in PyTorch's distributed backend (Issue#191305) where `WorkNCCL` error logs would report the incorrect local rank for processes participating in multiple process groups. Here's a blog documenting on why this happened, the investigation step, and the fix.
+Recently, I encountered and patched an interesting bug in PyTorch's distributed backend ([Issue #191305](https://github.com/pytorch/pytorch/issues/191305#event-28796733212)) where `WorkNCCL` error logs would report the incorrect local rank for processes participating in multiple process groups. Here's a blog documenting on why this happened, the investigation step, and the fix.
 
 ## Ambiguous Timeout Logs
 
