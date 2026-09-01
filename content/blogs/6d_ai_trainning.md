@@ -6,7 +6,7 @@ summary = "A practical breakdown of modern 6D parallelism techniques (DP/FSDP, T
 draft = false
 +++
 
-I remember the first time I heard about 3D or 6D training during a meeting with my mentor—the first thing that came to my mind was watching a 3D movie in a theater. Fast forward to now, I wanted to share the initial notes I wrote while researching this topic online.
+I remember the first time I heard about 3D or 6D training during a meeting with my mentor, the first thing that came to my mind was watching a 3D movie in a theater. Fast forward to now, I wanted to share the initial notes I wrote while researching this topic online.
 
 Modern distributed AI training splits its workload across multiple dimensions in distributed clusters. Some of the primary reasons for this include performance improvements and the simple fact that a single GPU node cannot hold that much data or model state. Some of the core challenges these strategies attempt to tackle are:
 
