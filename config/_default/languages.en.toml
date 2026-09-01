@@ -13,7 +13,7 @@ title = "Kunpeng Zhang"
 
 [params.author]
   name = "Kunpeng Zhang"
-  bio = "A minimal personal site for experience, projects, writing, and notes."
+  bio = "A minimal personal site for experience, writing, and notes."
   links = [
     { github = "https://github.com/AndyZzzZzzZzz" },
     { linkedin = "https://www.linkedin.com/in/andy-zhang-sfu/" },
