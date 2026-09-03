@@ -12,7 +12,7 @@ This post explains how that happens, what I learned from the incident, and how t
 
 ## What you experience
 
-The most visible symptom was that interactive work became nearly impossible. Standard Linux commands such as changing directories, listing files, and activating an environment—which normally take no time—became extremely slow or stopped responding entirely. When I ran a process dump, it showed Git operations were blocked in `cl_sync_io_wait`, a wait point in the Lustre client's kernel I/O path. This effectively blocked me from performing Git operations on my codebase (`git pull`, `git push`, etc.).
+The most visible symptom was that interactive work became nearly impossible. Standard Linux commands such as changing directories, listing files, and activating an environment which normally take no time became extremely slow or stopped responding entirely. When I ran a process dump, it showed Git operations were blocked in `cl_sync_io_wait`, a wait point in the Lustre client's kernel I/O path. This effectively blocked me from performing Git operations on my codebase (`git pull`, `git push`, etc.).
 
 The process isn't necessarily CPU-bound, deadlocked in user code, or waiting for terminal input. Instead, it is sleeping inside the kernel while the Lustre client waits for a remote storage service or network path to recover.
 
